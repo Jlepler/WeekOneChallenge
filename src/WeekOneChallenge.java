@@ -16,28 +16,25 @@ public class WeekOneChallenge {
 
         int primeChecker1;
 
-        do {
 
-            System.out.println("Please input a number to check if it is prime: ");
+        do {
+            System.out.println("Input a number");
             inputNumber = key.nextInt();
 
-             for (int i=2; i!=inputNumber; i++)
-            {
-
-                primeChecker1 = (inputNumber % i);
+            for (int i = 2; i <= (inputNumber / 2); i++) {
+                primeChecker1 = inputNumber % i;
 
                 if (primeChecker1 == 0) {
                     System.out.println(inputNumber + " is not a prime number.");
                     break;
-                } else {
+                }
+                else if (i == (inputNumber / 2)) {
                     System.out.println(inputNumber + " is a prime number.");
                     break;
                 }
+                else
+                    ;
                 }
+        } while (true);
             }
-
-            while(true) ;
-
-
-    }
-}
+        }
