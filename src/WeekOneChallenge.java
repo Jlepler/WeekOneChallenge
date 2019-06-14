@@ -13,7 +13,7 @@ public class WeekOneChallenge {
 
 
         int inputNumber;
-        boolean primeChecker;
+
         int primeChecker1;
 
         do {
@@ -21,19 +21,22 @@ public class WeekOneChallenge {
             System.out.println("Please input a number to check if it is prime: ");
             inputNumber = key.nextInt();
 
-            for (int i=2; i==inputNumber; i++) {
+             for (int i=2; i!=inputNumber; i++)
+            {
 
-                primeChecker = ((inputNumber % i) == 0);
                 primeChecker1 = (inputNumber % i);
 
                 if (primeChecker1 == 0) {
                     System.out.println(inputNumber + " is not a prime number.");
+                    break;
                 } else {
                     System.out.println(inputNumber + " is a prime number.");
+                    break;
+                }
                 }
             }
-        }
-            while (true) ;
+
+            while(true) ;
 
 
     }
